@@ -18,9 +18,14 @@ app.use(express.json({limit: "4mb"}));
 //maximum 4mb files can be uploaded
 
 //Initialising socket.io server
-export const io = new Server(server,{
-    cors: {origin:"*"}
-})
+export const io = new Server(server, {
+    cors: {
+        origin: "https://your-client-app.onrender.com",
+        methods: ["GET", "POST"],
+        credentials: true
+    }
+});
+
 
 //Store online users {userId, socketId}
 export const userSocketMap = {};
@@ -44,7 +49,10 @@ io.on("connection", (socket)=>{
 
 
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://your-client-app.onrender.com',
+    credentials:true
+}));
 //help us to connect all the URL to our backend
 
 
