@@ -25,13 +25,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots here after hosting or using placeholders:
-
-| Login Page | Chat Interface | Profile |
-|------------|----------------|---------|
-| ![](https://via.placeholder.com/250x150) | ![](https://via.placeholder.com/250x150) | ![](https://via.placeholder.com/250x150) |
 
 ---
 
@@ -53,3 +46,28 @@
 ```bash
 git clone https://github.com/your-username/chattrix.git
 cd chattrix
+```
+
+#### 2. Setup backend (Serer)
+```cd server
+npm install
+
+Create .env file inside /sever directory
+PORT=5000
+MONGO_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+And Start the Server by - npm run server
+```
+
+### 3. Running Frontend
+```cd ../client
+npm install
+npm run dev
+
+And FINALLY http://localhost:5173
+```
+
