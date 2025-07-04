@@ -20,11 +20,12 @@ app.use(express.json({limit: "4mb"}));
 //Initialising socket.io server
 export const io = new Server(server, {
     cors: {
-        origin: "https://your-client-app.onrender.com",
+        origin: "https://chattrix-client.onrender.com",
         methods: ["GET", "POST"],
         credentials: true
     }
 });
+
 
 
 //Store online users {userId, socketId}
@@ -50,9 +51,10 @@ io.on("connection", (socket)=>{
 
 
 app.use(cors({
-    origin: 'https://your-client-app.onrender.com',
-    credentials:true
+  origin: 'https://chattrix-client.onrender.com',
+  credentials: true
 }));
+
 //help us to connect all the URL to our backend
 
 
