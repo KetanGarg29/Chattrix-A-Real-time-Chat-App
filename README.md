@@ -5,6 +5,10 @@
 
 ---
 
+### Live Preview
+[Visit Chattrix App](https://chattrix-client.onrender.com)
+
+
 ## 🚀 Features
 
 - 🔒 Secure JWT-based user authentication
