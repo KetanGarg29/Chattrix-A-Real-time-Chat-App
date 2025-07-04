@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import {io} from "socket.io-client"
 import axios from "axios"	
 
-const backendurl = import.meta.env.VITE_BACKEND_URL;
+const backendurl = import.meta.env.VITE_API_BASE;
 axios.defaults.baseURL = backendurl;
 
 export const AuthContext = createContext();
