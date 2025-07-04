@@ -52,7 +52,7 @@ cd chattrix
 ```cd server
 npm install
 
-Create .env file inside /sever directory
+In .env file inside /sever directory
 PORT=5000
 MONGO_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
