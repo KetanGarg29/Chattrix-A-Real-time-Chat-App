@@ -48,7 +48,7 @@ git clone https://github.com/your-username/chattrix.git
 cd chattrix
 ```
 
-#### 2. Setup backend (Serer)
+#### 2. Setup backend (Server)
 ```cd server
 npm install
 
